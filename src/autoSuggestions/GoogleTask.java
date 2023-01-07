@@ -16,9 +16,12 @@ public class GoogleTask {
 		driver.get("https://www.google.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		driver.findElement(By.name("q")).sendKeys("Srivalli");
-		List<WebElement> suggestions = driver.findElements(By.xpath("//li/descendant::div[@class='wM6W7d']"));
+		driver.findElement(By.name("q")).sendKeys("Selenium");
+		List<WebElement> suggestions = driver.findElements(By.xpath("//div[@class='erkvQe']/descendant::li"));
 		System.out.println(suggestions.size());
+		
+		System.out.println(suggestions.get(4).getText());
+		driver.quit();
 
 	}
 
