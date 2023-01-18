@@ -44,7 +44,7 @@ public class ActitimeLoginUsingPropertiesFile {
 		driver.findElement(By.id("username")).sendKeys(user+Keys.TAB+pwd+Keys.ENTER);
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
-		boolean status = wait.until(ExpectedConditions.titleContains("Enter Time-Track")).booleanValue();
+		boolean status = wait.until(ExpectedConditions.titleContains("Enter Time-Track"));
 
 		if(status)
 			System.out.println("Home page displayed");
