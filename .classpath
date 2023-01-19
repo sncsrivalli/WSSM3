@@ -23,5 +23,6 @@
 	<classpathentry kind="lib" path="poi/poi-scratchpad-5.0.0 (1).jar"/>
 	<classpathentry kind="lib" path="poi/SparseBitSet-1.2 (1).jar"/>
 	<classpathentry kind="lib" path="poi/xmlbeans-4.0.0 (1).jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

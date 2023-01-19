@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class ActitimeLoginPage {
 
 	//Declaration of elements
+	@FindBy(xpath = "//div[@class='atLogoImg']") private WebElement logo;
 	@FindBy(id = "username") private WebElement usernameTF;
 	@FindBy(name = "pwd") private WebElement passwordTF;
 	@FindBy(id = "keepLoggedInCheckBox") private WebElement keepMeLoggedCheckbox;
@@ -20,6 +21,10 @@ public class ActitimeLoginPage {
 	}
 	
 	//Utilization
+	
+	public WebElement getLogo() {
+		return logo;
+	}
 	
 	public void setUsername(String username) {
 		usernameTF.sendKeys(username);
