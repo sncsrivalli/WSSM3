@@ -1,23 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Hello World]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-01-19T11:52:44 IST" name="Default suite" finished-at="2023-01-19T11:52:44 IST" duration-ms="97">
+  <suite started-at="2023-01-20T11:49:14 IST" name="Default suite" finished-at="2023-01-20T11:49:14 IST" duration-ms="92">
     <groups>
     </groups>
-    <test started-at="2023-01-19T11:52:44 IST" name="Default test" finished-at="2023-01-19T11:52:44 IST" duration-ms="97">
-      <class name="testNG.SampleTest">
-        <test-method signature="demo()[pri:0, instance:testNG.SampleTest@1f97cf0d]" started-at="2023-01-19T11:52:44 IST" name="demo" finished-at="2023-01-19T11:52:44 IST" duration-ms="20" status="PASS">
+    <test started-at="2023-01-20T11:49:14 IST" name="Default test" finished-at="2023-01-20T11:49:14 IST" duration-ms="92">
+      <class name="testNG.AnnotationsPractice">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="beforeSuite" finished-at="2023-01-20T11:49:14 IST" duration-ms="11" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Hello World]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- demo -->
-      </class> <!-- testNG.SampleTest -->
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="beforeTest" finished-at="2023-01-20T11:49:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="beforeClass" finished-at="2023-01-20T11:49:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="beforeMethod" finished-at="2023-01-20T11:49:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="test" finished-at="2023-01-20T11:49:14 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="afterMethod" finished-at="2023-01-20T11:49:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="afterClass" finished-at="2023-01-20T11:49:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="afterTest" finished-at="2023-01-20T11:49:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="afterSuite" finished-at="2023-01-20T11:49:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testNG.AnnotationsPractice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
