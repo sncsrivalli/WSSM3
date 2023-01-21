@@ -1,49 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="9" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-20T11:49:14 IST" name="Default suite" finished-at="2023-01-20T11:49:14 IST" duration-ms="92">
+  <suite started-at="2023-01-21T11:50:59 IST" name="Suite" finished-at="2023-01-21T11:50:59 IST" duration-ms="103">
     <groups>
+      <group name="Sanity">
+        <method signature="FirstTest.test1()[pri:0, instance:groupExecution.FirstTest@732c2a62]" name="test1" class="groupExecution.FirstTest"/>
+        <method signature="FirstTest.test2()[pri:0, instance:groupExecution.FirstTest@732c2a62]" name="test2" class="groupExecution.FirstTest"/>
+        <method signature="SecondTest.test1()[pri:0, instance:groupExecution.SecondTest@120f102b]" name="test1" class="groupExecution.SecondTest"/>
+        <method signature="ThirdTest.test1()[pri:0, instance:groupExecution.ThirdTest@3a6bb9bf]" name="test1" class="groupExecution.ThirdTest"/>
+        <method signature="ThirdTest.test2()[pri:0, instance:groupExecution.ThirdTest@3a6bb9bf]" name="test2" class="groupExecution.ThirdTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="SecondTest.test0()[pri:0, instance:groupExecution.SecondTest@120f102b]" name="test0" class="groupExecution.SecondTest"/>
+        <method signature="SecondTest.test1()[pri:0, instance:groupExecution.SecondTest@120f102b]" name="test1" class="groupExecution.SecondTest"/>
+        <method signature="ThirdTest.test2()[pri:0, instance:groupExecution.ThirdTest@3a6bb9bf]" name="test2" class="groupExecution.ThirdTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="FirstTest.test0()[pri:0, instance:groupExecution.FirstTest@732c2a62]" name="test0" class="groupExecution.FirstTest"/>
+        <method signature="FirstTest.test2()[pri:0, instance:groupExecution.FirstTest@732c2a62]" name="test2" class="groupExecution.FirstTest"/>
+        <method signature="ThirdTest.test0()[pri:0, instance:groupExecution.ThirdTest@3a6bb9bf]" name="test0" class="groupExecution.ThirdTest"/>
+        <method signature="ThirdTest.test2()[pri:0, instance:groupExecution.ThirdTest@3a6bb9bf]" name="test2" class="groupExecution.ThirdTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-01-20T11:49:14 IST" name="Default test" finished-at="2023-01-20T11:49:14 IST" duration-ms="92">
-      <class name="testNG.AnnotationsPractice">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="beforeSuite" finished-at="2023-01-20T11:49:14 IST" duration-ms="11" status="PASS">
+    <test started-at="2023-01-21T11:50:59 IST" name="Test" finished-at="2023-01-21T11:50:59 IST" duration-ms="103">
+      <class name="groupExecution.ThirdTest">
+        <test-method signature="test0()[pri:0, instance:groupExecution.ThirdTest@3a6bb9bf]" started-at="2023-01-21T11:50:59 IST" name="test0" finished-at="2023-01-21T11:50:59 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="beforeTest" finished-at="2023-01-20T11:49:14 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- test0 -->
+        <test-method signature="test1()[pri:0, instance:groupExecution.ThirdTest@3a6bb9bf]" started-at="2023-01-21T11:50:59 IST" name="test1" finished-at="2023-01-21T11:50:59 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="beforeClass" finished-at="2023-01-20T11:49:14 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:groupExecution.ThirdTest@3a6bb9bf]" started-at="2023-01-21T11:50:59 IST" name="test2" finished-at="2023-01-21T11:50:59 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="beforeMethod" finished-at="2023-01-20T11:49:14 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- test2 -->
+      </class> <!-- groupExecution.ThirdTest -->
+      <class name="groupExecution.SecondTest">
+        <test-method signature="test0()[pri:0, instance:groupExecution.SecondTest@120f102b]" started-at="2023-01-21T11:50:59 IST" name="test0" finished-at="2023-01-21T11:50:59 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="test()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="test" finished-at="2023-01-20T11:49:14 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- test0 -->
+        <test-method signature="test1()[pri:0, instance:groupExecution.SecondTest@120f102b]" started-at="2023-01-21T11:50:59 IST" name="test1" finished-at="2023-01-21T11:50:59 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="afterMethod" finished-at="2023-01-20T11:49:14 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- test1 -->
+      </class> <!-- groupExecution.SecondTest -->
+      <class name="groupExecution.FirstTest">
+        <test-method signature="test0()[pri:0, instance:groupExecution.FirstTest@732c2a62]" started-at="2023-01-21T11:50:59 IST" name="test0" finished-at="2023-01-21T11:50:59 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="afterClass" finished-at="2023-01-20T11:49:14 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- test0 -->
+        <test-method signature="test1()[pri:0, instance:groupExecution.FirstTest@732c2a62]" started-at="2023-01-21T11:50:59 IST" name="test1" finished-at="2023-01-21T11:50:59 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="afterTest" finished-at="2023-01-20T11:49:14 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:groupExecution.FirstTest@732c2a62]" started-at="2023-01-21T11:50:59 IST" name="test2" finished-at="2023-01-21T11:50:59 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testNG.AnnotationsPractice@3059cbc]" started-at="2023-01-20T11:49:14 IST" name="afterSuite" finished-at="2023-01-20T11:49:14 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- testNG.AnnotationsPractice -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- test2 -->
+      </class> <!-- groupExecution.FirstTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
