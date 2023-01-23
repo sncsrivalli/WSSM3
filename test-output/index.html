@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,17 +51,17 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\WSSM3\groupExecutiontestng.xml</span>
+                    <span>D:\WSSM3\crossbrowserparalleltestng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>3 groups</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="crossbrowserparallel.ActitimeLoginTest" class="method navigator-link" hash-for-method="loginTest(edge)">loginTest(edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="crossbrowserparallel.GoogleTest" class="method navigator-link" hash-for-method="simpleTest(edge)">simpleTest(edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,42 +123,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="groupExecution.SecondTest" class="method navigator-link" hash-for-method="test0">test0</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="crossbrowserparallel.ActitimeLoginTest" class="method navigator-link" hash-for-method="loginTest(chrome)">loginTest(chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="groupExecution.FirstTest" class="method navigator-link" hash-for-method="test0">test0</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="crossbrowserparallel.ActitimeLoginTest" class="method navigator-link" hash-for-method="loginTest(firefox)">loginTest(firefox)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="groupExecution.ThirdTest" class="method navigator-link" hash-for-method="test0">test0</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="crossbrowserparallel.GoogleTest" class="method navigator-link" hash-for-method="simpleTest(chrome)">simpleTest(chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="groupExecution.FirstTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="groupExecution.ThirdTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="groupExecution.SecondTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="groupExecution.ThirdTest" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="groupExecution.FirstTest" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="crossbrowserparallel.GoogleTest" class="method navigator-link" hash-for-method="simpleTest(firefox)">simpleTest(firefox)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -154,31 +153,114 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">groupExecution.FirstTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">crossbrowserparallel.GoogleTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test0">
-                  </a> <!-- test0 -->
-                  <span class="method-name">test0</span>
+                  <a name="simpleTest(edge)">
+                  </a> <!-- simpleTest(edge) -->
+                  <span class="method-name">simpleTest</span>
+                  <span class="parameters">(edge)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 107
+Current browser version is 109.0.1518.61 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Host info: host: &apos;DESKTOP-F52EDBA&apos;, ip: &apos;192.168.1.123&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;52e3a49ea2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:54)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:46)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:42)
+	at crossbrowserparallel.GoogleTest.simpleTest(GoogleTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">crossbrowserparallel.ActitimeLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(edge)">
+                  </a> <!-- loginTest(edge) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(edge)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 107
+Current browser version is 109.0.1518.61 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Host info: host: &apos;DESKTOP-F52EDBA&apos;, ip: &apos;192.168.1.123&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;52e3a49ea2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:54)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:46)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:42)
+	at crossbrowserparallel.ActitimeLoginTest.loginTest(ActitimeLoginTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">crossbrowserparallel.GoogleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="simpleTest(chrome)">
+                  </a> <!-- simpleTest(chrome) -->
+                  <span class="method-name">simpleTest</span>
+                  <span class="parameters">(chrome)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test2">
-                  </a> <!-- test2 -->
-                  <span class="method-name">test2</span>
+                  <a name="simpleTest(firefox)">
+                  </a> <!-- simpleTest(firefox) -->
+                  <span class="method-name">simpleTest</span>
+                  <span class="parameters">(firefox)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,50 +268,23 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">groupExecution.ThirdTest</span>
+              <span class="class-name">crossbrowserparallel.ActitimeLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test0">
-                  </a> <!-- test0 -->
-                  <span class="method-name">test0</span>
+                  <a name="loginTest(chrome)">
+                  </a> <!-- loginTest(chrome) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(chrome)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test2">
-                  </a> <!-- test2 -->
-                  <span class="method-name">test2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">groupExecution.SecondTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test0">
-                  </a> <!-- test0 -->
-                  <span class="method-name">test0</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
+                  <a name="loginTest(firefox)">
+                  </a> <!-- loginTest(firefox) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(firefox)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -237,34 +292,34 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\WSSM3\groupExecutiontestng.xml</span>
+            <span class="header-content">D:\WSSM3\crossbrowserparalleltestng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;groups&gt;
-    &lt;run&gt;
-      &lt;include name=&quot;Smoke&quot;/&gt;
-      &lt;include name=&quot;Sanity&quot;/&gt;
-      &lt;include name=&quot;Regression&quot;/&gt;
-    &lt;/run&gt;
-  &lt;/groups&gt;
-  &lt;groups&gt;
-    &lt;run&gt;
-      &lt;include name=&quot;Smoke&quot;/&gt;
-      &lt;include name=&quot;Sanity&quot;/&gt;
-      &lt;include name=&quot;Regression&quot;/&gt;
-    &lt;/run&gt;
-  &lt;/groups&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test1&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;groupExecution.ThirdTest&quot;/&gt;
-      &lt;class name=&quot;groupExecution.FirstTest&quot;/&gt;
-      &lt;class name=&quot;groupExecution.SecondTest&quot;/&gt;
+      &lt;class name=&quot;crossbrowserparallel.GoogleTest&quot;/&gt;
+      &lt;class name=&quot;crossbrowserparallel.ActitimeLoginTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test2&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;crossbrowserparallel.GoogleTest&quot;/&gt;
+      &lt;class name=&quot;crossbrowserparallel.ActitimeLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test3&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;crossbrowserparallel.GoogleTest&quot;/&gt;
+      &lt;class name=&quot;crossbrowserparallel.ActitimeLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -276,7 +331,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test1 (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test3 (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -286,46 +347,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Regression</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">test0</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">test1</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">test2</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">Sanity</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">test1</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">test2</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">Smoke</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">test0</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">test2</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -342,44 +363,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test0')
-data.setCell(0, 2, 'groupExecution.ThirdTest')
-data.setCell(0, 3, 11);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'crossbrowserparallel.ActitimeLoginTest')
+data.setCell(0, 3, 12372);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test0')
-data.setCell(1, 2, 'groupExecution.SecondTest')
-data.setCell(1, 3, 5);
+data.setCell(1, 1, 'simpleTest')
+data.setCell(1, 2, 'crossbrowserparallel.GoogleTest')
+data.setCell(1, 3, 11142);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test1')
-data.setCell(2, 2, 'groupExecution.FirstTest')
-data.setCell(2, 3, 2);
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'crossbrowserparallel.ActitimeLoginTest')
+data.setCell(2, 3, 9936);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test2')
-data.setCell(3, 2, 'groupExecution.ThirdTest')
-data.setCell(3, 3, 1);
+data.setCell(3, 1, 'simpleTest')
+data.setCell(3, 2, 'crossbrowserparallel.GoogleTest')
+data.setCell(3, 3, 5857);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'test0')
-data.setCell(4, 2, 'groupExecution.FirstTest')
-data.setCell(4, 3, 1);
+data.setCell(4, 1, 'simpleTest')
+data.setCell(4, 2, 'crossbrowserparallel.GoogleTest')
+data.setCell(4, 3, 2681);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'test1')
-data.setCell(5, 2, 'groupExecution.ThirdTest')
-data.setCell(5, 3, 1);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'test1')
-data.setCell(6, 2, 'groupExecution.SecondTest')
-data.setCell(6, 3, 1);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'test2')
-data.setCell(7, 2, 'groupExecution.FirstTest')
-data.setCell(7, 3, 1);
+data.setCell(5, 1, 'loginTest')
+data.setCell(5, 2, 'crossbrowserparallel.ActitimeLoginTest')
+data.setCell(5, 3, 2149);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 ms</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -394,16 +407,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">groupExecution.SecondTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">test2</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -412,44 +418,37 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">groupExecution.ThirdTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">crossbrowserparallel.GoogleTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">test0</span>
+                <span class="method-name">simpleTest(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">17 ms</span>
+                <span class="method-name">simpleTest(firefox)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test2</span>
-                <span class="method-start">19 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">groupExecution.FirstTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">test0</span>
-                <span class="method-start">27 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">30 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test2</span>
-                <span class="method-start">35 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">simpleTest(edge)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">groupExecution.SecondTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">crossbrowserparallel.ActitimeLoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">test0</span>
-                <span class="method-start">41 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest(edge)</span>
+                <span class="method-start">2692 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">49 ms</span>
+                <span class="method-name">loginTest(chrome)</span>
+                <span class="method-start">5860 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(firefox)</span>
+                <span class="method-start">11146 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
