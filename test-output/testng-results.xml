@@ -1,52 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-23T12:06:32 IST" name="Suite" finished-at="2023-01-23T12:06:56 IST" duration-ms="23564">
+  <suite started-at="2023-01-24T11:49:42 IST" name="Default suite" finished-at="2023-01-24T11:49:46 IST" duration-ms="3992">
     <groups>
     </groups>
-    <test started-at="2023-01-23T12:06:32 IST" name="Test3" finished-at="2023-01-23T12:06:37 IST" duration-ms="4892">
-      <class name="crossbrowserparallel.ActitimeLoginTest">
-        <test-method signature="loginTest(java.lang.String)[pri:0, instance:crossbrowserparallel.ActitimeLoginTest@3d6f0054]" started-at="2023-01-23T12:06:35 IST" name="loginTest" finished-at="2023-01-23T12:06:37 IST" duration-ms="2149" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+    <test started-at="2023-01-24T11:49:42 IST" name="Default test" finished-at="2023-01-24T11:49:46 IST" duration-ms="3992">
+      <class name="assertions.SoftAssertPractice">
+        <test-method signature="simpleTest()[pri:-1, instance:assertions.SoftAssertPractice@77eca502]" started-at="2023-01-24T11:49:42 IST" name="simpleTest" finished-at="2023-01-24T11:49:42 IST" duration-ms="22" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 107
-Current browser version is 109.0.1518.61 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
-Host info: host: 'DESKTOP-F52EDBA', ip: '192.168.1.123'
-Build info: version: '4.7.0', revision: '52e3a49ea2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}}]]]>
+              <![CDATA[The following asserts failed:
+expected [Hello] but found [Hi]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 107
-Current browser version is 109.0.1518.61 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
-Host info: host: 'DESKTOP-F52EDBA', ip: '192.168.1.123'
-Build info: version: '4.7.0', revision: '52e3a49ea2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:54)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:46)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:42)
-at crossbrowserparallel.ActitimeLoginTest.loginTest(ActitimeLoginTest.java:25)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Hello] but found [Hi]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at assertions.SoftAssertPractice.simpleTest(SoftAssertPractice.java:25)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -63,147 +35,29 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- crossbrowserparallel.ActitimeLoginTest -->
-      <class name="crossbrowserparallel.GoogleTest">
-        <test-method signature="simpleTest(java.lang.String)[pri:0, instance:crossbrowserparallel.GoogleTest@16a0ee18]" started-at="2023-01-23T12:06:32 IST" name="simpleTest" finished-at="2023-01-23T12:06:35 IST" duration-ms="2681" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 107
-Current browser version is 109.0.1518.61 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
-Host info: host: 'DESKTOP-F52EDBA', ip: '192.168.1.123'
-Build info: version: '4.7.0', revision: '52e3a49ea2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 107
-Current browser version is 109.0.1518.61 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
-Host info: host: 'DESKTOP-F52EDBA', ip: '192.168.1.123'
-Build info: version: '4.7.0', revision: '52e3a49ea2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:54)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:46)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:42)
-at crossbrowserparallel.GoogleTest.simpleTest(GoogleTest.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- simpleTest -->
-      </class> <!-- crossbrowserparallel.GoogleTest -->
-    </test> <!-- Test3 -->
-    <test started-at="2023-01-23T12:06:32 IST" name="Test1" finished-at="2023-01-23T12:06:48 IST" duration-ms="15842">
-      <class name="crossbrowserparallel.ActitimeLoginTest">
-        <test-method signature="loginTest(java.lang.String)[pri:0, instance:crossbrowserparallel.ActitimeLoginTest@a3d8174]" started-at="2023-01-23T12:06:38 IST" name="loginTest" finished-at="2023-01-23T12:06:48 IST" duration-ms="9936" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="skillraryLogoTest()[pri:0, instance:assertions.SoftAssertPractice@77eca502]" started-at="2023-01-24T11:49:42 IST" name="skillraryLogoTest" finished-at="2023-01-24T11:49:46 IST" duration-ms="3892" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- crossbrowserparallel.ActitimeLoginTest -->
-      <class name="crossbrowserparallel.GoogleTest">
-        <test-method signature="simpleTest(java.lang.String)[pri:0, instance:crossbrowserparallel.GoogleTest@68c72235]" started-at="2023-01-23T12:06:32 IST" name="simpleTest" finished-at="2023-01-23T12:06:38 IST" duration-ms="5857" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- simpleTest -->
-      </class> <!-- crossbrowserparallel.GoogleTest -->
-    </test> <!-- Test1 -->
-    <test started-at="2023-01-23T12:06:32 IST" name="Test2" finished-at="2023-01-23T12:06:56 IST" duration-ms="23564">
-      <class name="crossbrowserparallel.ActitimeLoginTest">
-        <test-method signature="loginTest(java.lang.String)[pri:0, instance:crossbrowserparallel.ActitimeLoginTest@fba92d3]" started-at="2023-01-23T12:06:43 IST" name="loginTest" finished-at="2023-01-23T12:06:56 IST" duration-ms="12372" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- crossbrowserparallel.ActitimeLoginTest -->
-      <class name="crossbrowserparallel.GoogleTest">
-        <test-method signature="simpleTest(java.lang.String)[pri:0, instance:crossbrowserparallel.GoogleTest@67c33749]" started-at="2023-01-23T12:06:32 IST" name="simpleTest" finished-at="2023-01-23T12:06:43 IST" duration-ms="11142" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- simpleTest -->
-      </class> <!-- crossbrowserparallel.GoogleTest -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- skillraryLogoTest -->
+      </class> <!-- assertions.SoftAssertPractice -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
