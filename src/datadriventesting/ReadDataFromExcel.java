@@ -25,17 +25,18 @@ public class ReadDataFromExcel {
 		//It throws EncryptedDocumentException, IOException
 		wb = WorkbookFactory.create(fis);
 		
-		//Step 3: Fetch required sheet
-		Sheet sheet = wb.getSheet("Sheet1");
-		
-		//Step 4: Fetch required row
-		Row row = sheet.getRow(0);
-		
-		//Step 5: Fetch required cell
-		Cell cell = row.getCell(1);
-		
-		//Step 6: Read data from cell
-		String data = cell.getStringCellValue();
+//		//Step 3: Fetch required sheet
+//		Sheet sheet = wb.getSheet("Sheet1");
+//		
+//		//Step 4: Fetch required row
+//		Row row = sheet.getRow(0);
+//		
+//		//Step 5: Fetch required cell
+//		Cell cell = row.getCell(1);
+//		
+//		//Step 6: Read data from cell
+//		String data = cell.getStringCellValue();
+		String data = wb.getSheet("Sheet1").getRow(0).getCell(1).getStringCellValue();
 		System.out.println(data);
 		}
 		
